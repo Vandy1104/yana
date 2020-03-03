@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Formative3-1</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <h2 class="text-light col-lg-1 col-sm-6">News</h2>
+
+
+    <select id="inputCountry" class="col-lg-2 col-sm-6 mr-2 mt-3 mb-3" name="country">
+      <option value="noCountry" disabled selected>Select Country</option>
+      <option value="nz">New Zealand</option>
+      <option value="au">Australia</option>
+      <option value="de">Germany</option>
+      <option value="no">Norway</option>
+      <option value="se">Sweden</option>
+      <option value="ca">Canada</option>
+      <option value="gb">United Kingdom</option>
+      <option value="us">United States</option>
+      <option value="cn">China</option>
+      <option value="th">Thailand</option>
+      <option value="jp">Japan</option>
+      <option value="hk">Hong Kong</option>
+      <option value="sg">Singapore</option>
+
+
+    </select>
+
+    <select id="inputCategory" class="col-lg-2 col-sm-6 mr-2 mt-3 mb-3" name="category">
+      <option value="noCategory" disabled selected>Select Category</option>
+      <option value="general">General</option>
+      <option value="business">Business</option>
+      <option value="health">Health</option>
+      <option value="entertainment">Entertainment</option>
+      <option value="sports">Sports</option>
+      <option value="science">Sience</option>
+      <option value="technology">Technology</option>
+    </select>
+
+    <button id="submit" type="button" class="col-lg-1 col-sm-4 mt-3 mb-3 btn btn-info btn-sm text-light" name="button">Search</button>
+
+    <select id="inputSource" class="col-lg-2  col-sm-6 mr-2 mt-3 mb-3" name="source">
+      <option value="noSource" disabled selected>Select Source</option>
+      <option value="abc-news">ABC News</option>
+      <option value="al-jazeera-english">Al Jazeera English</option>
+      <option value="bbc-news">BBC News</option>
+      <option value="cbc-news">CBS News</option>
+      <option value="cnbc">CNBC</option>
+      <option value="cnn">CNN</option>
+      <option value="entertainment-weekly">Entertainment Weekly</option>
+      <option value="espn">ESPN</option>
+      <option value="fox-news">Fox News</option>
+      <option value="national-geographic">National Geographic</option>
+      <option value="nbc-news">NBC News</option>
+      <option value="the-huffington-post">The Huffington Post</option>
+      <option value="new-scientist">New Scientist</option>
+    </select>
+    <button id="submitSource" type="button" class="col-lg-1 col-sm-4 mt-3 mb-3 btn btn-info btn-sm text-light" name="button">Source</button>
+  </nav>
+
+  <div class="row bg-info">
+    <div class="mx-auto">
+      <div class="col-lg-12 py-2">
+        <form class="form-inline">
+        <input id="inputSearch" class="form-control mr-3" type="search" placeholder="Search" aria-label="Search">
+        <button id="submitSearch" class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- end points -->
+
+
+  <div class="container">
+
+
+    <div id="result" class="row m-auto pt-3">
+
+
+    </div>
+    <div class="row mb-5 mt-3">
+      <button class="btn-show btn-lg btn-info mx-auto">About this project</button>
+    </div>
+    <div id="about" class="row mx-auto border border-info rounded-sm px-4 py-4">
+      <div class="col-4">
+        <img class="img-fluid pr-3" alt="Yana Brewster" src="images/yanabrewster.png">
+      </div>
+      <div class="col-8">
+        <h2>About Yana Brewster</h2> <br>
+        <p>This app is for a Yoobee Colleges formative project where the objectives are to: <br> 1) Use an external API (newsAPI) to produce a web interface. 2) Create a single page application with a JS framework (AJAX). 3) Optimise a client-side application.</p>
+        <br>
+        <p>About me, I love the process of designing and creating websites. The satisfaction of seeing a webpage complete and code behaving properly (as I have programmed it to perform) is what I enjoy most about web design - along with learning more about creating user-friendly designs with code.
+          <br><br>This site is <a href="https://newsapi.org"> Powered by News API.</a>
+        </p>
+      </div>
+    </div>
+    <div class="row mb-5 mt-3">
+      <button class="btn-hide btn-lg btn-info mx-auto">Back to the news!</button>
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/config.json"></script>
+  <script src="js/script.js"></script>
+  <!-- <script src="js/script.min.js"></script> -->
+</body>
+</html>
